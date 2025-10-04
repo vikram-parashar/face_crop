@@ -103,7 +103,8 @@ def main():
     # )
     args = parser.parse_args()
     if not args.input:
-        print("Please provide an input image or directory using --input")
+        print(" ****Please provide an input image or directory using --input ****\n")
+        print(parser.print_help())
         return
 
     if os.path.isdir(args.input):
